@@ -67,7 +67,7 @@
 #Paragraph{
     grid-area: Para1;
     /* background-color: green; */
-    text-align: start;
+    text-align: justify;
     margin: 5px 0px;
 }
 
