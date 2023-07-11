@@ -1,0 +1,51 @@
+#AIBooks{
+    width: 60%;
+    /* border: 1px solid rgb(172, 190, 170); */
+    height: 500px;
+    margin: 20px auto;
+}
+#AIBooks>div:nth-child(1){
+    width: 100%;
+    height: 20%;
+    /* background-color: aqua; */
+}
+#AIBooks>div:nth-child(1)>h1{
+    margin: 0px;
+    color: #526D82;
+    font-size: 40px;
+}
+#AIBooks>div:nth-child(1)>div{
+    border: 1px solid #acacac;
+    width: 45%;
+    margin: 0px auto;
+
+}
+#AIBooks>div:nth-child(1)>p{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #526D82;
+    font-weight: 600;
+}
+#AIBooks>div:nth-child(2){
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    margin-top: 50px;
+}
+
+#AIBooks>div:nth-child(2)>div{
+    width: 45%;
+    height: 100%;
+    text-align: start;
+}
+#AIBooks>div:nth-child(2)>div>label{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
