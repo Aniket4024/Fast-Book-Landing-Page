@@ -8,6 +8,7 @@
     align-items: center;
     display: flex;
     transition: height 0.3s;
+    /* background-color: aqua; */
 }
 #Banner>div:nth-child(1){
     width: 45%;
@@ -19,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: width 0.3s;
+    transition: width 0.3s,height 0.3s;
 }
 #Banner>div>img{
     width: 80%;
@@ -162,5 +163,28 @@
     }
     #Banner>div:nth-child(2)>label>p{
         width: 100%;
+    }
+    #Banner>div:nth-child(2)>button{
+        margin:30px auto;
+    }
+    #Banner>div:nth-child(2)>h1{
+        margin-top: 30px;
+    }
+    #Banner{
+        height: 400px;
+    }
+}
+@media screen and (max-width:420px){
+    #Banner{
+        height: 500px;
+    }
+}
+@media screen and (max-width:300px){
+    
+    #Banner{
+        height: 550px;
+    }
+    #Banner>div:nth-child(2)>h1{
+        margin-top: 30px;
     }
 }

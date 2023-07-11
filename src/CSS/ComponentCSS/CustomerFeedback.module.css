@@ -2,7 +2,9 @@
     width: 70%;
     /* background-color: rgb(117, 68, 68); */
     height: 500px;
-    margin: 30px auto;
+    margin: 50px auto;
+    transition: height 0.3s;
+    transition: width 0.3s,height 0.3s;
 }
 
 #main>div:nth-child(1){
@@ -19,6 +21,7 @@
     border: 1px solid #acacac;
     width: 55%;
     margin: 0px auto;
+    transition: width 0.3s;
 }
 #main>div:nth-child(1)>p{
     margin-top: 5px;
@@ -35,6 +38,7 @@
     justify-content: space-between;
     align-items: start;
     margin:15px auto;
+    transition: width 0.3s;
 }
 
 #main>div:nth-child(2)>div{
@@ -65,4 +69,196 @@
     /* background-color: green; */
     text-align: start;
     margin: 5px 0px;
+}
+
+@media screen and (max-width:1366px) {
+    #main{
+        width: 75%;
+    }
+    #main>div:nth-child(2){
+        width: 90%;
+    }
+    #main>div:nth-child(1)>div{
+        width: 65%;
+    }
+    
+
+}
+@media screen and (max-width:1150px){
+    #main{
+        width: 80%;
+    }
+    #main>div:nth-child(2){
+        width: 96%;
+    }
+    #main>div:nth-child(1)>div{
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width:990px){
+    #main{
+        width: 85%;
+        height: 500px;
+    }
+    #main>div:nth-child(1){
+        height: 17%;
+    }
+    #main>div:nth-child(2){
+        width: 99%;
+    }
+    #main>div:nth-child(1)>div{
+        width: 75%;
+    }
+}
+@media screen and (max-width:800px){
+    #main{
+        width: 90%;
+        height:600px;
+    }
+    #main>div:nth-child(1){
+        height: 15%;
+    }
+    #main>div:nth-child(2){
+        display: block;
+        height: 84%;
+    }
+    #main>div:nth-child(1)>div{
+        width: 80%;
+    }
+    #main>div:nth-child(2)>div{
+        width: 100%;
+        height: 48%;
+        /* background-color: pink; */
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:755px){
+    #main{
+        width: 90%;
+        height:650px;
+    }
+    #main>div:nth-child(1){
+        height: 13%;
+    }
+    #main>div:nth-child(2){
+        display: block;
+    }
+    #main>div:nth-child(1)>div{
+        width: 90%;
+    }
+    #main>div:nth-child(2)>div{
+        width: 100%;
+        height: 48%;
+        /* background-color: pink; */
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:670px){
+    #main{
+        width: 90%;
+        height:800px;
+    }
+    #main>div:nth-child(1){
+        height: 13%;
+    }
+    
+    #main>div:nth-child(2){
+        display: block;
+    }
+    #main>div:nth-child(1)>div{
+        width: 95%;
+    }
+    #main>div:nth-child(2)>div{
+        width: 100%;
+        height: 48%;
+        /* background-color: pink; */
+        gap: 10px;
+    }
+}
+@media screen and (max-width:570px){
+    #main{
+        width: 90%;
+        height:850px;
+    }
+    #main>div:nth-child(1){
+        height: 20%;
+        transition: height 0.2s;
+    }
+    
+    #main>div:nth-child(2){
+        display: block;
+    }
+    #main>div:nth-child(1)>div{
+        width: 95%;
+    }
+    #main>div:nth-child(2)>div{
+        width: 100%;
+        height: 48%;
+        /* background-color: pink; */
+        gap: 10px;
+    }
+}
+@media screen and (max-width:570px){
+    #main{
+        width: 90%;
+        height:900px;
+    }
+    #main>div:nth-child(1){
+        height: 15%;
+        transition: height 0.2s;
+    }
+    #main>div:nth-child(1)>div{
+        display: none;
+    }
+    #main>div:nth-child(1)>p{
+        display: none;
+    }
+
+}
+@media screen and (max-width:450px){
+    #main{
+        width: 90%;
+        height:1050px;
+    }
+    #main>div:nth-child(1){
+        height: 15%;
+        transition: height 0.2s;
+    }
+}
+@media screen and (max-width:385px){
+    #main{
+        width: 90%;
+        height:1200px;
+    }
+    #main>div:nth-child(1){
+        height: 15%;
+        transition: height 0.2s;
+    }
+    #main>div:nth-child(2){
+        height: 80%;
+    }
+    #main>div:nth-child(2)>div{
+        height: 50%;
+        width: 95%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:338px){
+    #main{
+        margin: 80px 0px 10px 0px;
+    }
+    #main>div:nth-child(2){
+        gap: 10px;
+    }
+}
+@media screen and (max-width:300px){
+    #main>div:nth-child(1){
+        height: 12%;
+    }
+    #main{
+        height: 1400px;
+    }
 }
