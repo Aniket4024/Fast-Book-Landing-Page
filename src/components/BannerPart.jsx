@@ -1,8 +1,6 @@
 import { useState } from "react"
 import style from "../CSS/ComponentCSS/BannerPart.module.scss"
-import Banner from "../Media/Banner.jpg"
 import BookVector from "../Media/Book-vector-graphics.png"
-import logo from "../Media/logo.png"
 
 
 const BannerPart = ()=>{
