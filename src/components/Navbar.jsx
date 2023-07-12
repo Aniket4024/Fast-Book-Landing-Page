@@ -28,7 +28,7 @@ const Navbar = ()=>{
         </div>
         <div>
            <div>
-                <input type="number" placeholder="Mobile Number"/>
+                <input type="text" placeholder="Mobile Number"/>
                 <button onClick={()=>setShow(prev=>!prev)}>
                     <img src={show1 ? hide : show} alt="" />
                 </button>
