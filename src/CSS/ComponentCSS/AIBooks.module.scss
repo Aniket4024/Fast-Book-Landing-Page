@@ -1,3 +1,6 @@
+@import "../../sass/H1.scss";
+@import "../../sass/Text.scss";
+
 #AIBooks{
     width: 60%;
     /* border: 1px solid rgb(88, 121, 84); */
@@ -12,7 +15,7 @@
 }
 #AIBooks>div:nth-child(1)>h1{
     margin: 0px;
-    color: #526D82;
+    color:$H1-TC;
     font-size: 40px;
 }
 #AIBooks>div:nth-child(1)>div{
@@ -25,7 +28,7 @@
 #AIBooks>div:nth-child(1)>p{
     margin-top: 5px;
     font-size: 14px;
-    color: #526D82;
+    color: $Text-color;
     font-weight: 600;
 }
 #AIBooks>div:nth-child(2){
@@ -45,13 +48,18 @@
     text-align: start;
     /* background-color: pink; */
 }
+#AIBooks>div:nth-child(2)>div>label>img{
+    width: 20px;
+    height: 20px;
+}
 #AIBooks>div:nth-child(2)>div>label{
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 10px;
-    font-size: 14px;
+    // font-size: 14px;
     font-weight: 500;
+    color: $Text-color;  
 }
 
 @media screen and (max-width:1366px) {

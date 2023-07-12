@@ -1,3 +1,8 @@
+
+@import "../../sass/Button.scss";
+@import "../../sass/H1.scss";
+@import "../../sass/Text.scss";
+
 #Banner{
     width: 100%;
     height: 500px;
@@ -8,7 +13,8 @@
     align-items: center;
     display: flex;
     transition: height 0.3s;
-    /* background-color: aqua; */
+    background: rgb(83,255,137);
+    background: linear-gradient(90deg, rgba(83,255,137,1) 0%, rgba(77,177,255,1) 36%, rgba(0,143,255,1) 100%);
 }
 #Banner>div:nth-child(1){
     width: 45%;
@@ -36,7 +42,7 @@
 #Banner>div:nth-child(2)>h1{
     margin-top: 100px;
     font-size: 50px;
-    color: #526D82;
+    color: white;
 }
 #Banner>div:nth-child(2)>input{
     width: 60%;
@@ -45,9 +51,11 @@
     outline: 0px;
     border-radius: 10px;
     background-color: White;
+    color: $Text-color;
     padding: 0px 15px;
     font-weight: 600;
     transition: width 0.3s;
+    color: $Text-color
 }
 #Banner>div:nth-child(2)>label{
     display: flex;
@@ -56,6 +64,7 @@
     gap: 5px;
     margin-top: 10px;
     margin-left: 10px;
+    color: $Text-color;
 }
 #Banner>div:nth-child(2)>label>p{
     width: 60%;
@@ -64,15 +73,16 @@
     font-size: 14px;
     transition: width 0.2s;
     text-align: justify;
+    color: white;
 }
 #Banner>div:nth-child(2)>button{
     width: 20%;
     margin: auto;
-    height: 40px;
-    border-radius: 5px;
+    height: $Button-Height;
+    border-radius: 10px;
     border: 0px;
-    background-color: #9DB2BF;
-    color: #455562;
+    background-color: $Button-BGC;
+    color: $Button-TC;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
     font-weight: 600;
@@ -83,8 +93,7 @@
 }
 
 #Banner>div:nth-child(2)>button:hover{
-    background-color: #526D82;
-    color: white;
+    background-color: $Button-Hover-BGC;
 }
 
 @media screen and (max-width:1366px) {

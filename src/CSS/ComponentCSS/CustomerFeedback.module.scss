@@ -1,3 +1,7 @@
+@import "../../sass/H1.scss";
+@import "../../sass/H2.scss";
+@import "../../sass/Text.scss";
+
 #main{
     width: 70%;
     /* background-color: rgb(117, 68, 68); */
@@ -5,6 +9,10 @@
     margin: 50px auto;
     transition: height 0.3s;
     transition: width 0.3s,height 0.3s;
+    background-color: #1476ff;
+    padding: 30px 0px 0px 0px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #main>div:nth-child(1){
@@ -14,11 +22,12 @@
 }
 #main>div:nth-child(1)>h1{
     margin: 0px;
-    color: #526D82;
+    // color: $H1-TC;
+    color: white;
     font-size: 40px;
 }
 #main>div:nth-child(1)>div{
-    border: 1px solid #acacac;
+    border: 1px solid white;
     width: 55%;
     margin: 0px auto;
     transition: width 0.3s;
@@ -26,8 +35,9 @@
 #main>div:nth-child(1)>p{
     margin-top: 5px;
     font-size: 14px;
-    color: #526D82;
-    font-weight: 600;
+    // color: $Text-color;
+    color: white;
+    font-weight:$Text-FW;
 }
 
 #main>div:nth-child(2){
@@ -42,13 +52,15 @@
 }
 
 #main>div:nth-child(2)>div{
-    width: 47%;
+    width: 48%;
     height: 95%;
     /* background-color: pink; */
     gap: 10px;
 }
 #main>div:nth-child(2)>div>h2{
     text-align: start;
+    // color: $H2-TC;
+    color: white;
 }
 #Image{
     /* background-color: red; */
@@ -69,6 +81,8 @@
     /* background-color: green; */
     text-align: justify;
     margin: 5px 0px;
+    // color: $Text-color;
+    color: white;
 }
 
 @media screen and (max-width:1366px) {

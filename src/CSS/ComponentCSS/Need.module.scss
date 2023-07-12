@@ -1,3 +1,6 @@
+@import "../../sass/H1.scss";
+@import "../../sass/Text.scss";
+
 #need{
     width: 75%;
     height: 400px;
@@ -13,7 +16,7 @@
 }
 #need>div:nth-child(1)>h1{
     margin: 0px;
-    color: #526D82;
+    color: $H1-TC;
     font-size: 40px;
 }
 #need>div:nth-child(1)>div{
@@ -26,7 +29,7 @@
 #need>div:nth-child(1)>p{
     margin-top: 5px;
     font-size: 14px;
-    color: #526D82;
+    color: $Text-color;
     font-weight: 600;
 }
 
@@ -59,8 +62,8 @@
     line-height: 22px;
     font-size: 14px;
     text-align: start;
-    font-weight: 600;
-    color: #526D82;
+    font-weight: $Text-FW;
+    color: $Text-color;
 }
 
 

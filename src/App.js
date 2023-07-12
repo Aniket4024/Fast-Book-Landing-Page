@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <hr/>
+      {/* <hr/> */}
       <BannerPart/>
       <AIBooks/>
       <CustomerFeedback/>

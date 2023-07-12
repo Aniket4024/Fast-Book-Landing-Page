@@ -1,5 +1,5 @@
 import { useState } from "react"
-import style from "../CSS/ComponentCSS/BannerPart.module.css"
+import style from "../CSS/ComponentCSS/BannerPart.module.scss"
 import Banner from "../Media/Banner.jpg"
 import BookVector from "../Media/Book-vector-graphics.png"
 import logo from "../Media/logo.png"
@@ -26,7 +26,12 @@ const BannerPart = ()=>{
             <br />
             <label htmlFor="">
                 <input type="checkbox" name="" id="" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit facere assumenda, aspernatur ducimus quasi quisquam consectetur? Eveniet mollitia dignissimos ipsum consectetur deserunt voluptate dolorum quisquam labore, iure id corrupti odit.</p>
+                <p>
+                    By clicking the checkbox , you agree and accept that all your personal information 
+                    (including the sensitive personal information) shall be governed as per the Privacy 
+                    Policy and shall be stored in the servers located in territory of India owned ,
+                    controlled and managed  by us.
+                </p>
             </label>
             <button>
                 Continue

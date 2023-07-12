@@ -1,4 +1,4 @@
-import style from "../CSS/ComponentCSS/Need.module.css"
+import style from "../CSS/ComponentCSS/Need.module.scss"
 import defaultImage from "../Media/defaultImage.png"
 
 const Need = ()=>{

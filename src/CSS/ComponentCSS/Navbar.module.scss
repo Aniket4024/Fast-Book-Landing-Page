@@ -1,0 +1,83 @@
+@import "../../sass/Button.scss";
+@import "../../sass/Text.scss";
+
+#Navbar{
+    // background-color: #0958d9;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Navbar>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+#Navbar>div:nth-child(1)>img{
+    width:150px;
+}
+#Navbar>div:nth-child(2){
+    line-height: $Text-LH;
+    color: $Text-color;
+    width: 40%;
+}
+#Navbar>div:nth-child(3){
+    display: grid;
+    height: 70%;
+    width: 25%;
+}
+#Navbar>div:nth-child(3)>div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+#Navbar>div:nth-child(3)>div>input{
+    border-radius: 7px;
+    border: 1px solid gray;
+    outline: 0px;
+    height: 25px;
+    padding-left: 10px;
+    width: 30%;
+}
+#Navbar>div:nth-child(3)>div>button{
+    width: 10%;
+    background-color: transparent;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#Navbar>div:nth-child(3)>div>button>img{
+    width: 80%;
+}
+#Navbar>div:nth-child(3)>button{
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin: auto;
+    gap: 5px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: $Button-BGC;
+    color: $Button-TC;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+#Navbar>div:nth-child(3)>button:hover{
+    background-color: $Button-Hover-BGC;
+}
+
+
+@media screen and (max-width:350px){
+    #Navbar{
+        justify-content: space-around;
+    }
+}
+
