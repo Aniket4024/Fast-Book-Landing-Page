@@ -5,6 +5,7 @@ import logo1 from "../Media/logo(1).svg"
 import { useState } from "react";
 import show from "../Media/show.png"
 import hide from "../Media/hide.png"
+import arrow from "../Media/arrow-right.png"
 
 
 const Navbar = ()=>{
@@ -28,6 +29,9 @@ const Navbar = ()=>{
         <div>
            <div>
                 <input type="number" placeholder="Mobile Number"/>
+                <button onClick={()=>setShow(prev=>!prev)}>
+                    <img src={show1 ? hide : show} alt="" />
+                </button>
                 <input type={show1 ? "text" : "password"} placeholder="Password"/>
                 <button onClick={()=>setShow(prev=>!prev)}>
                     <img src={show1 ? hide : show} alt="" />
@@ -36,6 +40,9 @@ const Navbar = ()=>{
             <button>
                 <HiOutlineLogin style={{marginTop:"-4px"}}/>
                 <h4>Login / Register</h4>
+            </button>
+            <button>
+                <img src={arrow} alt="" />
             </button>
         </div>
     </div>

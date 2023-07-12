@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
 }
 hr{
   width: 95%;
@@ -42,3 +42,5 @@ hr{
     transform: rotate(360deg);
   }
 }
+
+
