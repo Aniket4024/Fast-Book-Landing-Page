@@ -1,6 +1,7 @@
 import { useState } from "react"
 import style from "../CSS/ComponentCSS/BannerPart.module.scss"
 import BookVector from "../Media/Book-vector-graphics.png"
+import BannerVideo from "../Media/BannerVideo.mp4"
 
 
 const BannerPart = ()=>{
@@ -11,7 +12,17 @@ const BannerPart = ()=>{
         id={style.Banner}
     >
         <div>
-            <img src={BookVector} alt="Book Vector" />
+            {/* <img src={BookVector} alt="Book Vector" /> */}
+            <video 
+                width="90%" 
+                height="80%"
+                loop
+                autoPlay
+                type="video/mp4"
+                muted
+                src={BannerVideo}
+            >
+            </video>
         </div>
         <div>
             <h1>Start Now</h1>

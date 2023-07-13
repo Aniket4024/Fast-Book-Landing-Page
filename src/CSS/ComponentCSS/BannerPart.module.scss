@@ -22,15 +22,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    /* background-color: aqua; */
+    // background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: width 0.3s,height 0.3s;
 }
-#Banner>div>img{
-    width: 80%;
+#Banner>div>video{
+    // width: 80%;
     transition: width 0.4s;
+    // border: 1px solid red;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 #Banner>div:nth-child(2){
     width: 45%;
@@ -83,7 +87,7 @@
     border: 0px;
     background-color: $Button-BGC;
     color: $Button-TC;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: $BUtton-Shadow;
     cursor: pointer;
     font-weight: 600;
     margin-left: 40px;
@@ -107,8 +111,9 @@
     #Banner>div:nth-child(2){
         width:55% ;
     } */
-    #Banner>div>img{
+    #Banner>div>video{
         width: 85%;
+        height: auto;
     }
     #Banner>div:nth-child(2)>label>p{
         width: 60%;
@@ -125,7 +130,7 @@
         width: 45%;
     }
     #Banner>div:nth-child(2){
-        width: 50%;
+        width: 45%;
     }
     #Banner>div:nth-child(2)>label>p{
         width: 70%;
@@ -145,7 +150,7 @@
         width: 45%;
     }
     #Banner>div:nth-child(2){
-        width: 50%;
+        width: 45%;
     }
     #Banner>div:nth-child(2)>label>p{
         width: 90%;
