@@ -17,7 +17,7 @@
     background: linear-gradient(90deg, rgba(83,255,137,1) 0%, rgba(77,177,255,1) 36%, rgba(0,143,255,1) 100%);
 }
 #Banner>div:nth-child(1){
-    width: 45%;
+    width: 60%;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,8 +111,13 @@
     #Banner>div:nth-child(2){
         width:55% ;
     } */
+
+    // #Banner>div>video{
+    //     width: 85%;
+    //     height: auto;
+    // }
     #Banner>div>video{
-        width: 85%;
+        width: 100%;
         height: auto;
     }
     #Banner>div:nth-child(2)>label>p{
@@ -127,7 +132,7 @@
 }
 @media screen and (max-width:1150px){
     #Banner>div:nth-child(1){
-        width: 45%;
+        width: 70%;
     }
     #Banner>div:nth-child(2){
         width: 45%;
@@ -147,7 +152,7 @@
 }
 @media screen and (max-width:990px){
     #Banner>div:nth-child(1){
-        width: 45%;
+        width: 80%;
     }
     #Banner>div:nth-child(2){
         width: 45%;
@@ -167,7 +172,8 @@
 }
 @media screen and (max-width:800px){
     #Banner>div:nth-child(1){
-        display: none;
+        display: flex;
+        width: 90%;
     }
     #Banner>div:nth-child(2){
         width: 70%;
@@ -186,18 +192,27 @@
         margin-top: 30px;
     }
     #Banner{
-        height: 400px;
+        height: 450px;
+    }
+}
+@media screen and (max-width:600px){
+    #Banner>div:nth-child(1){
+        display: flex;
+        width: 95%;
+    }
+    #Banner{
+        height:350px;
     }
 }
 @media screen and (max-width:420px){
     #Banner{
-        height: 500px;
+        height:250px;
     }
 }
 @media screen and (max-width:300px){
     
     #Banner{
-        height: 550px;
+        height: 200px;
     }
     #Banner>div:nth-child(2)>h1{
         margin-top: 30px;

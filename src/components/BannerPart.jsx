@@ -24,7 +24,7 @@ const BannerPart = ()=>{
             >
             </video>
         </div>
-        <div>
+        {/* <div>
             <h1>Start Now</h1>
             <input 
                 type="text"  
@@ -45,7 +45,7 @@ const BannerPart = ()=>{
             <button>
                 Continue
             </button>
-        </div>
+        </div> */}
     </div>
 }
 

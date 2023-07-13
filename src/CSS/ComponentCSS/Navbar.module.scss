@@ -28,6 +28,7 @@
     line-height: $Text-LH;
     color: $Text-color;
     width: 30%;
+    word-spacing: 5px;
 }
 #Navbar>div:nth-child(3){
     display: grid;
@@ -63,7 +64,22 @@
     width: 20px;
 }
 #Navbar>div:nth-child(3)>button{
-    height: 30px;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin: auto;
+    gap: 5px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: $Button-BGC;
+    color: $Button-TC;
+    box-shadow: $BUtton-Shadow;
+    cursor: pointer;
+}
+#popupButn{
+    height: 40px;
     width: 150px;
     display: flex;
     align-items: center;
@@ -84,6 +100,9 @@
     width: 30px;
 }
 #Navbar>div:nth-child(3)>button:hover{
+    background-color: $Button-Hover-BGC;
+}
+#popupButn:hover{
     background-color: $Button-Hover-BGC;
 }
 
