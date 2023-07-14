@@ -23,7 +23,8 @@
     display: grid;
     gap: 10px;
     padding-top: 20px;
-    width: 250px;
+    width: 300px;
+    cursor: pointer;
 }
 #popup>input,div>input{
     border-radius: 7px;
@@ -46,4 +47,8 @@
     border: 0px;
     cursor: pointer;
     
+}
+#popup>p{
+    margin-top: -45px;
+    margin-left: 180px;
 }

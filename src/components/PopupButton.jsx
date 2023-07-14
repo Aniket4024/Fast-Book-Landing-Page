@@ -19,7 +19,7 @@ const content = ({show1,setShow})=>{
             <button id={style.popupButn}>
                 <h4>Login / Register</h4>
             </button>
-            <p>Forgot Password ? | Register</p>
+            <p>Forgot Password ?</p>
         </div>
       );
 }
