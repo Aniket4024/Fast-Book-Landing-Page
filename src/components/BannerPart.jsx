@@ -24,6 +24,10 @@ const BannerPart = ()=>{
             >
             </video>
         </div>
+        <div>
+            <input type="text" placeholder="Email I'd" />
+            <button>Join Wishlist</button>
+        </div>
         {/* <div>
             <h1>Start Now</h1>
             <input 
@@ -46,6 +50,7 @@ const BannerPart = ()=>{
                 Continue
             </button>
         </div> */}
+
     </div>
 }
 

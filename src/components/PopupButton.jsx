@@ -7,6 +7,7 @@ import show from "../Media/show.png"
 
 const text = <span></span>;
 const content = ({show1,setShow})=>{
+
     return (
         <div id={style.popup}>
             <input type="text" placeholder="Mobile Number"/>
@@ -35,6 +36,15 @@ const PopupButton = () => {
     if (arrowAtCenter) return { pointAtCenter: true };
     return showArrow;
   }, [showArrow, arrowAtCenter]);
+
+  var wishlist = window.location.href;
+  console.log(wishlist)
+
+  if(wishlist === "http://localhost:3000/wishlist" ){
+    return <button id={style.popupButn}>
+      <h4>Join Wishlist</h4>
+    </button>
+  }
 
   return (
     <div className="demo">
