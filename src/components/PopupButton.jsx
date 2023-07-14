@@ -5,7 +5,7 @@ import hide from "../Media/hide.png"
 import show from "../Media/show.png"
 
 
-const text = <span>Login</span>;
+const text = <span></span>;
 const content = ({show1,setShow})=>{
     return (
         <div id={style.popup}>
