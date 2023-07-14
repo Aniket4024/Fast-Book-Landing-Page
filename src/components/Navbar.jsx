@@ -17,9 +17,9 @@ const Navbar = ()=>{
             {/* <svg>{logo1}</svg> */}
         </div>
         <div>
-            <h3>
+            <h1>
                 Accounting RE-Imagined                
-            </h3>
+            </h1>
         </div>
         <div>
            {/* <div>
