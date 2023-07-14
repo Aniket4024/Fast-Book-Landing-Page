@@ -16,7 +16,7 @@
     // background: rgb(83,255,137);
     background: linear-gradient(17deg,#006DC1 ,#008FFF);
 }
-#Banner>div:nth-child(1){
+#div1{
     width: 60%;
     height: 80%;
     background-position: center;
@@ -29,8 +29,29 @@
     transition: width 0.3s,height 0.3s;
     margin: auto;
 }
-#Banner>div>video{
-    // width: 80%;
+#div0{
+    width: 60%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    // background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.3s,height 0.3s;
+    margin: auto;
+}
+#div1>video{
+    width: 90%;
+    transition: width 0.4s;
+    // border: 1px solid red;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+#div0>video{
+    width: 100%;
     transition: width 0.4s;
     // border: 1px solid red;
     height: auto;
@@ -97,7 +118,7 @@
     transition: width 0.3s;
 }
 
-#Banner>div:nth-child(2){
+#wishlist{
     width: 40%;
     margin: auto;
 }
@@ -135,14 +156,17 @@
     // #Banner>div:nth-child(2)>button{
     //     width: 30%;
     // }
-    #Banner>div:nth-child(2){
+    #wishlist{
         width: 50%;
         margin: auto;
     }
 }
 @media screen and (max-width:1150px){
-    #Banner>div:nth-child(1){
+    #div1{
         width: 70%;
+    }
+    #div0{
+        width: 90%;
     }
     // #Banner>div:nth-child(2){
     //     width: 45%;
@@ -153,7 +177,7 @@
     // #Banner>div:nth-child(2)>input{
     //     width: 80%;
     // }
-    #Banner>div:nth-child(2)>button{
+    #wishlist>button{
         width: 25%;
     }
     // #Banner>div>img{
@@ -161,8 +185,11 @@
     // }
 }
 @media screen and (max-width:990px){
-    #Banner>div:nth-child(1){
+    #div1{
         width: 80%;
+    }
+    #div0{
+        width: 90%;
     }
     // #Banner>div:nth-child(2){
     //     width: 45%;
@@ -179,12 +206,12 @@
     // #Banner>div>img{
     //     width: 100%;
     // }
-    #Banner>div:nth-child(2){
+    #wishlist{
         width: 60%;
     }
 }
 @media screen and (max-width:800px){
-    #Banner>div:nth-child(1){
+    #div1{
         display: flex;
         width: 90%;
     }
@@ -207,12 +234,12 @@
     #Banner{
         height: 650px;
     }
-    #Banner>div:nth-child(2){
+    #wishlist{
         width: 80%;
     }
 }
 @media screen and (max-width:600px){
-    #Banner>div:nth-child(1){
+    #div1{
         display: flex;
         width: 95%;
         height: 80%;
@@ -221,17 +248,17 @@
         width: 90%;
         height: auto;
     }
-    #Banner>div:nth-child(2){
+    #wishlist{
         width: 90%;
         height: 20%;
     }
     #Banner{
         height:500px;
     }
-    #Banner>div:nth-child(2)>input{
+    #wishlist>input{
         width: 50%;
     }
-    #Banner>div:nth-child(2)>button{
+    #wishlist>button{
         width: 30%;
     }
 }
@@ -239,7 +266,7 @@
     #Banner{
         height:350px;
     }
-    #Banner>div:nth-child(1){
+    #div1{
         height: 70%;
     }
     #Banner>div:nth-child(2){
@@ -248,10 +275,10 @@
         margin: auto;
         gap: 0px;
     }
-    #Banner>div:nth-child(2)>input{
+    #wishlist>input{
         width: 45%;
     }
-    #Banner>div:nth-child(2)>button{
+    #wishlist>button{
         width: 35%;
     }
 }

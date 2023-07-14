@@ -8,10 +8,12 @@ const BannerPart = ()=>{
 
     const [Number1,setNumber] = useState("");
 
+    var wishlist = window.location.href;
+
     return <div 
         id={style.Banner}
     >
-        <div>
+        <div id={wishlist === "http://localhost:3000/wishlist" ? style.div1 : style.div0}>
             {/* <img src={BookVector} alt="Book Vector" /> */}
             <video 
                 width="90%" 
@@ -24,7 +26,7 @@ const BannerPart = ()=>{
             >
             </video>
         </div>
-        <div>
+        <div style={{display:wishlist === "http://localhost:3000/wishlist" ? "block":"none"}} id={style.wishlist}>
             <input type="text" placeholder="Email I'd" />
             <button>Join Wishlist</button>
         </div>

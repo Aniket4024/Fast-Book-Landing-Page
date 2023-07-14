@@ -38,7 +38,6 @@ const PopupButton = () => {
   }, [showArrow, arrowAtCenter]);
 
   var wishlist = window.location.href;
-  console.log(wishlist)
 
   if(wishlist === "http://localhost:3000/wishlist" ){
     return <button id={style.popupButn}>
