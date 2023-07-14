@@ -39,7 +39,7 @@ const PopupButton = () => {
 
   var wishlist = window.location.href;
 
-  if(wishlist === "http://localhost:3000/wishlist" ){
+  if((wishlist[wishlist.length-1]==="t"||wishlist[wishlist.length-2]==="s"||wishlist[wishlist.length-3]==="i"||wishlist[wishlist.length-4]==="l") ){
     return <button id={style.popupButn}>
       <h4>Join Wishlist</h4>
     </button>

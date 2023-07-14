@@ -13,7 +13,7 @@ const BannerPart = ()=>{
     return <div 
         id={style.Banner}
     >
-        <div id={wishlist === "http://localhost:3000/wishlist" ? style.div1 : style.div0}>
+        <div id={(wishlist[wishlist.length-1]==="t"||wishlist[wishlist.length-2]==="s"||wishlist[wishlist.length-3]==="i"||wishlist[wishlist.length-4]==="l") ? style.div1 : style.div0}>
             {/* <img src={BookVector} alt="Book Vector" /> */}
             <video 
                 width="90%" 
@@ -26,7 +26,7 @@ const BannerPart = ()=>{
             >
             </video>
         </div>
-        <div style={{display:wishlist === "http://localhost:3000/wishlist" ? "block":"none"}} id={style.wishlist}>
+        <div style={{display:(wishlist[wishlist.length-1]==="t"||wishlist[wishlist.length-2]==="s"||wishlist[wishlist.length-3]==="i"||wishlist[wishlist.length-4]==="l") ? "block":"none"}} id={style.wishlist}>
             <input type="text" placeholder="Email I'd" />
             <button>Join Wishlist</button>
         </div>
